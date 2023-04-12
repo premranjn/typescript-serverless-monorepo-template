@@ -1,0 +1,8 @@
+datasource db {
+  provider = "postgresql"
+  url      = "mysql://gjn7bax8hx5awfywa7o4:pscale_pw_OWuRNCR6ue3PboLrQGqElzvnSROF3nbfjqyUlCVxCUr@aws.connect.psdb.cloud/open-source-finder?ssl={'rejectUnauthorized':true}"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
