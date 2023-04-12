@@ -1,0 +1,13 @@
+{
+  "name": "@lib/tsconfig",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "files": [
+    "base.json",
+    "nextjs.json"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
