@@ -24,7 +24,7 @@
     "generate": "pnpm --filter ./lib/db generate",
     "lint": "lint-staged",
     "prepare": "husky install",
-    "commit": "git add . && cz",
+    "commit": "git add --all && cz",
     "clean": "rimraf --glob **/node_modules"
   },
   "lint-staged": {
