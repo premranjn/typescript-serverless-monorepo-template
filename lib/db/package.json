@@ -4,17 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "generate": "prisma generate"
+    "generate": "prisma generate",
+    "lint": "eslint --fix --ignore-path .gitignore && eslint --ignore-path .gitignore"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
   "devDependencies": {
-    "prisma": "^4.12.0",
-    "@lib/tsconfig": "workspace:*"
+    "@lib/tsconfig": "workspace:*",
+    "prisma": "^4.12.0"
   },
   "dependencies": {
+    "@lib/eslint": "workspace:^",
     "@prisma/client": "^4.12.0",
     "dotenv": "^16.0.3"
   }

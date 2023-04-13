@@ -7,13 +7,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.57.1",
-    "@typescript-eslint/parser": "^5.58.0",
+    "@lib/eslint": "workspace:^",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.38.0",
     "husky": "^8.0.3",
-    "lint-staged": "^13.2.1",
     "prettier": "^2.8.7",
     "rimraf": "^5.0.0",
     "typescript": "^5.0.4"
@@ -21,20 +19,10 @@
   "scripts": {
     "dev": "pnpm --parallel --filter ./{apps,lib}/* dev",
     "build": "pnpm --filter ./{apps,lib}/* build",
-    "generate": "pnpm --filter ./lib/db generate",
-    "lint": "lint-staged",
+    "generate": "pnpm --filter ./{apps,lib}/* generate",
+    "lint": "pnpm --filter ./{apps,lib}/* lint",
     "prepare": "husky install",
-    "commit": "git add --all && cz",
-    "clean": "rimraf --glob **/node_modules"
-  },
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx}": [
-      "eslint --fix",
-      "eslint"
-    ],
-    "*.{ts,tsx}": [
-      "tsc --noEmit --pretty"
-    ]
+    "commit": "git add --all && cz"
   },
   "husky": {
     "hooks": {

@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "lint": "next lint",
+    "lint": "eslint --fix --ignore-path .gitignore && eslint --ignore-path .gitignore",
     "start": "next start"
   },
   "dependencies": {
@@ -14,9 +14,10 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@lib/eslint": "workspace:*",
     "@lib/tsconfig": "workspace:*",
     "@types/node": "18.15.11",
-    "@types/react": "18.0.34",
+    "@types/react": "18.0.35",
     "@types/react-dom": "18.0.11"
   }
 }
