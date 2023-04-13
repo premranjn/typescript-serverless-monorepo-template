@@ -1,7 +1,5 @@
-# contributor.dev
+# typescript-serverless-monorepo-template
 
-⚡ Helping you find impactful Open Source projects that need help ⚡
-
-[https://contributor.dev](https://contributor.dev)
+⚡ pnpm Monorepo w/ Next.js + Serverless Express and a focus on Developer Experience ⚡
 
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
