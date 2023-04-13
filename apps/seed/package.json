@@ -6,7 +6,8 @@
   "main": "index.js",
   "scripts": {
     "start": "ts-node-esm src/index.ts",
-    "lint": "eslint --fix --ignore-path .gitignore && eslint --ignore-path .gitignore"
+    "write": "eslint --fix src && prettier --write src --loglevel warn",
+    "lint": "pnpm write && eslint src"
   },
   "dependencies": {
     "@lib/db": "workspace:*",

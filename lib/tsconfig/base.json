@@ -21,7 +21,7 @@
 
     "target": "es2017",
     "outDir": "dist",
-    "declaration": true,
+    "declaration": false,
     "sourceMap": true,
 
     "esModuleInterop": true,

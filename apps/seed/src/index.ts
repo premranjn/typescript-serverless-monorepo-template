@@ -1,5 +1,5 @@
-import { Octokit } from "octokit";
 import { prisma } from "@lib/db";
+import { Octokit } from "octokit";
 
 const octokit = new Octokit();
 await Promise.all(

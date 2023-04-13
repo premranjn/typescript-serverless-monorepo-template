@@ -18,9 +18,10 @@
   },
   "scripts": {
     "dev": "pnpm --parallel --filter ./{apps,lib}/* dev",
-    "build": "pnpm --filter ./{apps,lib}/* build",
-    "generate": "pnpm --filter ./{apps,lib}/* generate",
-    "lint": "pnpm --filter ./{apps,lib}/* lint",
+    "build": "pnpm --parallel --aggregate-output --filter ./{apps,lib}/* build",
+    "generate": "pnpm --parallel --aggregate-output --filter ./{apps,lib}/* generate",
+    "write": "pnpm --parallel --aggregate-output --filter ./{apps,lib}/* write",
+    "lint": "pnpm --parallel --aggregate-output --filter ./{apps,lib}/* lint",
     "prepare": "husky install",
     "commit": "git add --all && cz"
   },
